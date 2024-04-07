@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    color: black;
+}
+
+.container: {
+    color: blue;
+}
+
+.conteudo {
+    background-color: #87b5b5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.editorWrap {
+    max-width: 550px;
+    min-width: 550px;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px black;
+    margin-top: 20px;
+}
+
+.previewWrap {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px black;
+    background-color: #c0d8d8;
+}
+
+.toolbar {
+    background-color: #4aa3a3;
+    font-family: 'Russo One', sans-serif;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    padding: 0.3rem;
+    line-height: 1.5;
+}
+
+#editor {
+    background-color: #c0d8d8;
+    border: 0;
+    padding-left: 10px;
+    max-width: 537px;
+    min-width: 537px;
+    height: 300px;
+}
+
+#preview {
+    margin: 0;
+    padding-left: 10px;
+    border: 0;
+    max-width: 750px;
+    min-width: 750px;
+}
