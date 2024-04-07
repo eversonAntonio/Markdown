@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"
+        integrity="sha512-pSeTnZAQF/RHxb0ysMoYQI/BRZsa5XuklcrgFfU3YZIdnD3LvkkqzrIeHxzFi6gKtI8Cpq2DEWdZjMTcNVhUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <div class='container'>
+        <div class='conteudo'>
+            <div class='editorWrap'>
+                <div class='toolbar'>
+                    Editor
+                </div>
+                <textarea id='editor' oninput="atualizaPreview()"># Título
+## Subtítulo
+[link](www.google.com)
+Aqui está `<div></div>` código em linha
+```
+// Código de multiplas linhas:
+function anotherExample() {
+      console.log('exemplo')
+}
+```
+- e claro que temos listas;
+  - com identação;
+    - e formatos diferentes;
+
+> Block Quotes!
+
+![free](https://avatars.githubusercontent.com/u/19886934?s=48&v=4)
+Você pode colocar texto em **negrito**
+                </textarea>
+            </div>
+            <div class='previewWrap'>
+                <div class='toolbar'>
+                    Preview
+                </div>
+                <div id='preview'></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
